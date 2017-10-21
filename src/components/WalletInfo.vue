@@ -1,10 +1,10 @@
 <template>
   <v-flex xs6>
     <v-card class="card--flex-toolbar">
-      <v-toolbar card class="light-blue">
+      <v-toolbar card class="red darken-4">
         <v-toolbar-title class="white--text">My Wallet</v-toolbar-title>
       </v-toolbar>
-      <v-list>
+      <v-list class="grey darken-1">
         <v-list-tile>
           <v-list-tile-title>
             Address
@@ -13,7 +13,7 @@
             {{ coinbase }}
           </v-list-tile-content>
         </v-list-tile>
-  
+
         <v-list-tile>
           <v-list-tile-title>
             Eth Balance
@@ -22,7 +22,7 @@
             {{ balance }}
           </v-list-tile-content>
         </v-list-tile>
-  
+
         <v-list-tile>
           <v-list-tile-title>
             Token Balance
@@ -31,9 +31,9 @@
             {{ tokens }}
           </v-list-tile-content>
         </v-list-tile>
-  
+
       </v-list>
-  
+
     </v-card>
   </v-flex>
 </template>
@@ -82,4 +82,3 @@ export default {
   }
 }
 </script>
-

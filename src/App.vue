@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-toolbar fixed>
+    <v-toolbar fixed class="red darken-4">
       <v-toolbar-title v-text="title"></v-toolbar-title>
     </v-toolbar>
     <main>

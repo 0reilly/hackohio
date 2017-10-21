@@ -1,10 +1,10 @@
 <template>
   <v-flex xs12>
     <v-card class="card--flex-toolbar">
-      <v-toolbar card class="light-blue">
+      <v-toolbar card class="red darken-4">
         <v-toolbar-title class="white--text">Transactions</v-toolbar-title>
       </v-toolbar>
-  
+
       <v-data-table :headers="headers" :items="items" hide-actions class="elevation-1">
         <template slot="items" scope="props">
           <td class="text-xs-left">{{ props.item.to }}</td>
@@ -12,7 +12,7 @@
           <td class="text-xs-left">{{ props.item.amount }}</td>
         </template>
       </v-data-table>
-  
+
     </v-card>
   </v-flex>
 </template>
@@ -44,4 +44,3 @@ export default {
   }
 }
 </script>
-
