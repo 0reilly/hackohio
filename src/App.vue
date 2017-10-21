@@ -40,7 +40,7 @@ export default {
 
   data () {
     return {
-      title: 'Func Wallet'
+      title: 'BuckICoin Wallet'
     }
   },
 
