@@ -5,11 +5,10 @@
         <v-toolbar-title class="white--text">Address Book</v-toolbar-title>
       </v-toolbar>
 
-      <v-data-table :headers="headers" :items="items" hide-actions class="elevation-1">
-        <template slot-scope="items" >
-          <td class="text-xs-left"></td>
-          <td class="text-xs-left"></td>
-          <td class="text-xs-left"></td>
+      <v-data-table :headers="headers" hide-actions class="elevation-2">
+        <template>
+          <td class="text-xs-left">oreilly.119</td>
+          <td class="text-xs-left">0x5671cDae9f224d1309C1F28B1741827fD45b5F36</td>
         </template>
       </v-data-table>
 
@@ -26,7 +25,16 @@ export default {
         { align: 'left', text: 'name.#', value: 'name.#' },
         { align: 'left', text: 'BuckICoin Address', value: 'BuckICoin' },
       ],
-      items: []
+      items: [
+        {
+          text: "oreilly.119",
+          value: "0x5671cDae9f224d1309C1F28B1741827fD45b5F36"
+        },
+        {
+          text: "rajasekera.3",
+          value: "0xCcB1d0ca3C59a5098872D26826458c613C735Acd",
+        },
+      ]
     }
   },
 

@@ -73,7 +73,8 @@ export default {
         if (!err) {
           console.log(res)
           this.addr = this.amount = null
-          WalletInfo.getTokenBalance()
+          //not working for some reason :/
+          //WalletInfo.getTokenBalance()
           return
         }
         console.log(err)
