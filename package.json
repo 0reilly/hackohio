@@ -1,8 +1,8 @@
 {
-  "name": "func-wallet",
-  "description": "Demo Solidity project for What The Func? Youtube Channel",
+  "name": "buckicoin-wallet",
+  "description": "P2P token for OSU students",
   "version": "1.0.0",
-  "author": "Ed Zynda",
+  "author": "Adam and Jude. Credit to Ed Zynda for boilerplate",
   "private": false,
   "scripts": {
     "dev": "cross-env NODE_ENV=development webpack-dev-server --progress --hot --host 0.0.0.0",
