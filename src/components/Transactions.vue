@@ -33,9 +33,8 @@ export default {
 
   mounted () {
 
-    CONTRACT.transfer({}, { fromBlock: 0, toBlock: 'pending' }, (err, res) => {
+    CONTRACT.Transfer({}, { fromBlock: 0, toBlock: 'pending' }, (err, res) => {
       console.log(res)
-      console.log("mounted")
       if (res.args.to === CONTRACT._eth.coinbase || res.args.from === CONTRACT._eth.coinbase) {
         this.items.push({
           to: res.args.to,

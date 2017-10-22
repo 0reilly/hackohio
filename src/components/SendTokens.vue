@@ -44,6 +44,7 @@
 <script>
 import { CONTRACT } from '../contract'
 import _ from 'lodash'
+import WalletInfo from './WalletInfo.vue'
 
 export default {
   data () {
@@ -72,11 +73,12 @@ export default {
         if (!err) {
           console.log(res)
           this.addr = this.amount = null
+          WalletInfo.getTokenBalance()
           return
         }
         console.log(err)
         this.addr = this.amount = null
-        WalletInfo.getTokenBalance()
+
       })
     }
   }

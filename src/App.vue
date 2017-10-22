@@ -13,12 +13,13 @@
             <wallet-info></wallet-info>
             <send-tokens></send-tokens>
           </v-layout>
+          <v-layout row class="pb-5">
+            <address-book></address-book>
+          </v-layout>
           <v-layout row>
             <transactions></transactions>
           </v-layout>
-          <v-layout row>
-            <addressbook></addressbook>
-          </v-layout>
+
         </v-container>
       </template>
     </main>
@@ -29,18 +30,19 @@
 </template>
 
 <script>
+import AddressBook from './components/AddressBook.vue'
 import WalletInfo from './components/WalletInfo.vue'
 import SendTokens from './components/SendTokens.vue'
 import Transactions from './components/Transactions.vue'
-import AddressBook from './components/AddressBook.vue'
+
 
 export default {
 
   components: {
+    AddressBook,
     WalletInfo,
     SendTokens,
-    Transactions,
-    AddressBook
+    Transactions
   },
 
   data () {

@@ -24,7 +24,7 @@ export default {
     return {
       headers: [
         { align: 'left', text: 'name.#', value: 'name.#' },
-        { align: 'left', text: 'BuckICoin', value: 'BuckICoin' },
+        { align: 'left', text: 'BuckICoin Address', value: 'BuckICoin' },
       ],
       items: []
     }
