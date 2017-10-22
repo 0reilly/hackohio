@@ -4,7 +4,7 @@
       <v-toolbar card class="red darken-4">
         <v-toolbar-title class="white--text">Address Book</v-toolbar-title>
       </v-toolbar>
-      
+
       <v-data-table :headers="headers" :items="items" hide-actions class="elevation-2">
         <template slot="items" scope="props">
           <td class="text-xs-left">{{props.item.text}}</td>

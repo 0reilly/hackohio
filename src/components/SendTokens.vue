@@ -10,18 +10,9 @@
             To Address
           </v-list-tile-title>
           <v-list-tile-content>
+
             <v-text-field label="0x00" single-line v-model="addr"></v-text-field>
-          </v-list-tile-content>
 
-          <v-list-tile-content>
-            <v-select
-
-              v-bind:items="AddressBook"
-              v-model="addr"
-              label="Select"
-              single-line
-              bottom
-            ></v-select>
           </v-list-tile-content>
         </v-list-tile>
 
@@ -54,7 +45,6 @@
 import { CONTRACT } from '../contract'
 import _ from 'lodash'
 import WalletInfo from './WalletInfo.vue'
-import AddressBook from './AddressBook.vue'
 
 export default {
   data () {
