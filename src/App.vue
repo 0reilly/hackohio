@@ -16,6 +16,9 @@
           <v-layout row>
             <transactions></transactions>
           </v-layout>
+          <v-layout row>
+            <addressbook></addressbook>
+          </v-layout>
         </v-container>
       </template>
     </main>
@@ -29,13 +32,15 @@
 import WalletInfo from './components/WalletInfo.vue'
 import SendTokens from './components/SendTokens.vue'
 import Transactions from './components/Transactions.vue'
+import AddressBook from './components/AddressBook.vue'
 
 export default {
 
   components: {
     WalletInfo,
     SendTokens,
-    Transactions
+    Transactions,
+    AddressBook
   },
 
   data () {

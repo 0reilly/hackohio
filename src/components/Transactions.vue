@@ -6,7 +6,7 @@
       </v-toolbar>
 
       <v-data-table :headers="headers" :items="items" hide-actions class="elevation-1">
-        <template slot="items" scope="props">
+        <template slot-scope="items" scope="props">
           <td class="text-xs-left">{{ props.item.to }}</td>
           <td class="text-xs-left">{{ props.item.from }}</td>
           <td class="text-xs-left">{{ props.item.amount }}</td>
@@ -32,7 +32,10 @@ export default {
   },
 
   mounted () {
-    CONTRACT.Transfer({}, { fromBlock: 0, toBlock: 'pending' }, (err, res) => {
+
+    CONTRACT.transfer({}, { fromBlock: 0, toBlock: 'pending' }, (err, res) => {
+      console.log(res)
+      console.log("mounted")
       if (res.args.to === CONTRACT._eth.coinbase || res.args.from === CONTRACT._eth.coinbase) {
         this.items.push({
           to: res.args.to,

@@ -67,6 +67,7 @@ export default {
         return
       }
 
+      console.log("before transfer")
       CONTRACT.transfer(this.addr, web3.toWei(this.amount, 'ether'), (err, res) => {
         if (!err) {
           console.log(res)
@@ -75,6 +76,7 @@ export default {
         }
         console.log(err)
         this.addr = this.amount = null
+        WalletInfo.getTokenBalance()
       })
     }
   }

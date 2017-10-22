@@ -55,7 +55,11 @@ export default {
     this.getEtherBalance()
     this.getTokenBalance()
     console.log("test");
+
     CONTRACT.Transfer((err, res) => {
+      if(err){
+        console.log(err)
+      }
       console.log("refresh");
       this.getTokenBalance()
     });
