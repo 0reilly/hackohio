@@ -6,7 +6,7 @@
       </v-toolbar>
 
       <v-data-table :headers="headers" :items="items" hide-actions class="elevation-1">
-        <template slot-scope="items" scope="props">
+        <template slot="items" scope="props">
           <td class="text-xs-left">{{ props.item.to }}</td>
           <td class="text-xs-left">{{ props.item.from }}</td>
           <td class="text-xs-left">{{ props.item.amount }}</td>
@@ -36,6 +36,7 @@ export default {
     CONTRACT.Transfer({}, { fromBlock: 0, toBlock: 'pending' }, (err, res) => {
       console.log(res)
       if (res.args.to === CONTRACT._eth.coinbase || res.args.from === CONTRACT._eth.coinbase) {
+        console.log("pushing to transaction history")
         this.items.push({
           to: res.args.to,
           from: res.args.from,

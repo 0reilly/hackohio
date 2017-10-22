@@ -5,12 +5,12 @@
         <v-toolbar-title class="white--text">Address Book</v-toolbar-title>
       </v-toolbar>
 
-      <v-data-table :headers="headers" hide-actions class="elevation-2">
+      <!-- <v-data-table :headers="headers" :items="items" hide-actions class="elevation-2">
         <template>
           <td class="text-xs-left">oreilly.119</td>
           <td class="text-xs-left">0x5671cDae9f224d1309C1F28B1741827fD45b5F36</td>
         </template>
-      </v-data-table>
+      </v-data-table> -->
 
     </v-card>
   </v-flex>
